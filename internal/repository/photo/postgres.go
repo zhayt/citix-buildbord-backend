@@ -34,7 +34,7 @@ func (r *viaPostgres) SaveInfo(ctx context.Context, file *models.PhotoInfo) erro
 }
 
 func (r *viaPostgres) GetAll(ctx context.Context) ([]*models.PhotoInfo, error) {
-	qr := fmt.Sprint(`SELECT image_url, created_at FROM photo_info`)
+	qr := fmt.Sprint(`SELECT image_url, created_at FROM photo_info ORDER BY created_at DESC`)
 
 	var images []*models.PhotoInfo
 	if err := r.db.SelectContext(ctx, &images, qr); err != nil {
