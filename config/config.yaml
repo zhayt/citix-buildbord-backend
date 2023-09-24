@@ -1,0 +1,35 @@
+app:
+  mode:
+  host:
+  port:
+  timeout:
+
+source:
+  news_api:
+  news_api_key:
+  timeout:
+
+cloudinary:
+  cloud_name:
+  api_key:
+  api_secret:
+
+wasabi:
+  endpoint:
+  access_key_id:
+  secret_key:
+  region:
+  bucket:
+  path:
+  timeout:
+
+postgres:
+  hostname:
+  port:
+  user:
+  password:
+  database:
+  user_table:
+  survey_table:
+  photo_table:
+  timeout:

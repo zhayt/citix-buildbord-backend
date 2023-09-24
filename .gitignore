@@ -1,0 +1,4 @@
+.idea
+cmd/local/
+.env
+localconfig.yaml
